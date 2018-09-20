@@ -1,7 +1,7 @@
 {
   "name": "safe-squel",
   "description": "(safe version) SQL query string builder",
-  "version": "5.12.3",
+  "version": "5.12.4",
   "author": "Ramesh Nair <ram@hiddentao.com> (http://www.hiddentao.com/)",
   "contributors": [
     "Ramesh Nair <ram@hiddentao.com> (http://www.hiddentao.com/)",

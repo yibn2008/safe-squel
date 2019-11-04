@@ -2981,7 +2981,7 @@ function _buildSquel() {
   }(cls.QueryBuilder);
 
   var _squel = {
-    VERSION: '5.12.3',
+    VERSION: '5.12.4',
     flavour: flavour,
     expr: function expr(options) {
       return new cls.Expression(options);
@@ -3500,7 +3500,9 @@ squel.flavours['mysql'] = function (_squel) {
 
   // add default stringFormatter for MySQL
   cls.DefaultQueryBuilderOptions.stringFormatter = function (value, formattingOptions) {
-    if (!value || formattingOptions.dontQuote) {
+    if (!value) {
+      return '\'\'';
+    } else if (formattingOptions.dontQuote) {
       return value;
     } else {
       return escape(value, {

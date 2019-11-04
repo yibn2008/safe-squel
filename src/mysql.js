@@ -6,7 +6,7 @@ squel.flavours['mysql'] = function(_squel) {
 
   // add default stringFormatter for MySQL
   cls.DefaultQueryBuilderOptions.stringFormatter = function (value, formattingOptions) {
-    if (!value || formattingOptions.dontQuote) {
+    if (formattingOptions.dontQuote) {
       return value;
     } else {
       return escape(value, {

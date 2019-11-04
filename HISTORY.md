@@ -1,4 +1,11 @@
 
+5.12.5 / 2019-11-04
+==================
+
+  * fix: fix empty string bug
+  * chore: bump to 5.12.5
+  * fix: fix mysql empty string
+
 5.12.4 / 2018-09-20
 ==================
 

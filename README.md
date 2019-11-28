@@ -32,7 +32,7 @@ actively developed alternatives such as [Knex](http://knexjs.org/)_
 Install using [npm](http://npmjs.org/):
 
 ```bash
-$ npm install squel
+$ npm install safe-squel
 ```
 
 ## Available files
